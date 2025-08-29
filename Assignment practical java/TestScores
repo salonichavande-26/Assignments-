@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class TestScores{
+	public static void main(String[] args){
+	Scanner input = new Scanner(System.in);
+	
+	System.out.print("Enter score for Test1: ");
+	int test1Score = input.nextInt();
+	
+	System.out.print("Enter score for Test2: ");
+	int test2Score = input.nextInt();
+	
+	if (test1Score > test2Score){
+		System.out.println("Test 1 has higher score");
+	}
+	else if (test1Score < test2Score){
+		System.out.println("Both test has higher score");
+	}
+	else{
+		System.out.println("Both tests have the same score");
+	}
+	input.close();
+}
+}
